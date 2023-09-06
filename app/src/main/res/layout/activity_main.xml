@@ -4,15 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/royalBlue"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/firstInputTextNumber"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="@color/persianRed"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCalculatorTextView" />
+
+    <EditText
+        android:id="@+id/secondInputTextNumber"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="@color/mintGreen"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operationSelectorSpinner"
+        app:layout_constraintVertical_bias="0.317" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/resultTextView"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@color/pinkFairyTale"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/operationSelectorSpinner"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstInputTextNumber" />
+
+    <TextView
+        android:id="@+id/titleCalculatorTextView"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:shadowColor="#F700FF"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/pinkFairyTale"
+        android:textColorHighlight="#FF0000"
+        android:textColorHint="#AE0000"
+        android:textColorLink="#CC0000"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:text="="
+        android:textColor="@color/lightSkyBlue"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondInputTextNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

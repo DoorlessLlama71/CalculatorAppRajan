@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="royalBlue">#03256C</color>
+    <color name="persianRed">#BC412B</color>
+    <color name="lightSkyBlue">#85C7F2</color>
+    <color name="pinkFairyTale">#F4BFDB</color>
+    <color name="mintGreen">#17B890</color>
 </resources>
