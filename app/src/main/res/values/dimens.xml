@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name = "inputBoxTextSize">24sp</dimen>
     <dimen name = "numberButtonTextSize">16dp</dimen>
     <dimen name = "numberButtonSideLength">80dp</dimen>
 </resources>
