@@ -40,13 +40,13 @@
 
     <TextView
         android:id="@+id/resultTextView"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="354dp"
+        android:layout_height="58dp"
         android:layout_marginBottom="60dp"
-        android:text=""
-        android:textAlignment="textEnd"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
         android:textColor="@color/pinkFairyTale"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -87,12 +87,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/enterButton"
         android:layout_width="80dp"
         android:layout_height="52dp"
         android:layout_marginEnd="92dp"
         android:backgroundTint="@color/lightSkyBlue"
         android:text="="
+        android:onClick="calculate"
         android:textAlignment="center"
         android:textColor="@color/royalBlue"
         android:textColorHighlight="#BA0C0C"
@@ -104,5 +105,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondInputTextNumber"
         app:layout_constraintVertical_bias="0.485" />
+
+    <Button
+        android:id="@+id/buttonCalcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightSkyBlue"
+        android:text="Button Calculator"
+        android:textColor="@color/royalBlue"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintEnd_toStartOf="@+id/enterButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondInputTextNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

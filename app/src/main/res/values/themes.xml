@@ -4,6 +4,10 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+    <style name="calculatorButtonTheme">
+        <item name="backgroundTint">@color/royalBlue</item>
+        <item name="android:textColor">@color/lightSkyBlue</item>
+    </style>
 
     <style name="Theme.CalculatorAppRajan" parent="Base.Theme.CalculatorAppRajan" />
 </resources>
