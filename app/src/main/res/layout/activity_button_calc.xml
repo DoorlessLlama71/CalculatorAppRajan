@@ -16,11 +16,11 @@
         tools:layout_editor_absoluteY="92dp" />
 
     <Button
-        android:theme="@style/calculatorButtonTheme"
         android:id="@+id/button15"
         android:layout_width="79dp"
         android:layout_height="73dp"
         android:text="Button"
+        android:theme="@style/calculatorButtonTheme"
         tools:layout_editor_absoluteX="211dp"
         tools:layout_editor_absoluteY="430dp" />
 
@@ -45,16 +45,18 @@
         android:layout_width="79dp"
         android:layout_height="73dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button11"
         tools:layout_editor_absoluteY="338dp" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="@dimen/numberButtonSideLength"
         android:layout_height="@dimen/numberButtonSideLength"
+        android:layout_marginStart="16dp"
         android:text="Button"
         android:textSize="@dimen/numberButtonTextSize"
-        tools:layout_editor_absoluteX="17dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="338dp" />
 
     <Button
@@ -70,7 +72,8 @@
         android:layout_width="271dp"
         android:layout_height="84dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="241dp" />
 
     <Button
@@ -94,7 +97,8 @@
         android:layout_width="79dp"
         android:layout_height="73dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="112dp"
+        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/button9"
         tools:layout_editor_absoluteY="338dp" />
 
     <Button
@@ -102,7 +106,8 @@
         android:layout_width="79dp"
         android:layout_height="73dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button15"
         tools:layout_editor_absoluteY="430dp" />
 
     <Button
@@ -133,9 +138,10 @@
         android:id="@+id/button8"
         android:layout_width="79dp"
         android:layout_height="86dp"
+        android:layout_marginBottom="8dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="242dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        tools:layout_editor_absoluteX="304dp" />
 
     <Button
         android:id="@+id/button16"
