@@ -52,12 +52,13 @@
         android:id="@+id/operationSelectorSpinner"
         android:layout_width="107dp"
         android:layout_height="35dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="76dp"
         android:background="@color/royalBlue"
         android:backgroundTint="@color/lightSkyBlue"
         android:entries="@array/operations"
         android:foregroundTint="#CD6363"
+        android:onClick="calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstInputTextNumber" />
 

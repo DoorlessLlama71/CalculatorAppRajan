@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
             enterTV.setText("" + (1.0 * firstInput / secondInput));
         }
     }
+    public void checkSpinner(View v){
+        
+    }
     public void switchToButtonCalc(View v){
 
     }

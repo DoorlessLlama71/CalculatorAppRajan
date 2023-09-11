@@ -7,6 +7,9 @@
     <style name="calculatorButtonTheme">
         <item name="android:backgroundTint">@color/lightSkyBlue</item>
         <item name="android:textColor">@color/royalBlue</item>
+        <item name="android:layout_width">@dimen/numberButtonSideLength</item>
+        <item name = "android:layout_height">@dimen/numberButtonSideLength</item>
+        <item name = "android:textSize">24sp</item>
     </style>
 
     <style name="inputBoxes">
@@ -17,6 +20,7 @@
         <item name = "android:layout_height">60dp</item>
         <item name = "android:textSize">24sp</item>
     </style>
+
 
     <style name="Theme.CalculatorAppRajan" parent="Base.Theme.CalculatorAppRajan" />
 </resources>
