@@ -30,12 +30,23 @@ public class MainActivity extends AppCompatActivity {
             enterTV.setText("" + (0.0 + firstInput - secondInput));
         } else if (operation.equals("*")) {
             enterTV.setText("" + (1.0 * firstInput * secondInput));
+        } else if (operation.equals("MOD")) {
+            enterTV.setText("" + (1.0 * firstInput * secondInput));
         } else {
             enterTV.setText("" + (1.0 * firstInput / secondInput));
         }
     }
     public void checkSpinner(View v){
-        
+            EditText firstInputTN = findViewById(R.id.firstInputTextNumber);
+            EditText secondInputTN = findViewById(R.id.secondInputTextNumber);
+            Spinner operationSpin = findViewById(R.id.operationSelectorSpinner);
+            String operation = operationSpin.getSelectedItem().toString();
+            if (operation.equals("square root") || operation.equals("cube root")) {
+                firstInputTN.setHint("Single Input");
+                firstInputTN.setText("");
+                secondInputTN.setHint("Leave Blank(NC)");
+                secondInputTN.setText("");
+            }
     }
     public void switchToButtonCalc(View v){
 
