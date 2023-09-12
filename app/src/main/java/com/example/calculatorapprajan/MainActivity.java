@@ -9,17 +9,19 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    EditText firstInputTN;
+    EditText secondInputTN;
+    Spinner operationSpin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        firstInputTN = findViewById(R.id.firstInputTextNumber);
+        secondInputTN = findViewById(R.id.secondInputTextNumber);
+        operationSpin = findViewById(R.id.operationSelectorSpinner);
     }
     public void calculate(View v) {
-        EditText firstInputTN = findViewById(R.id.firstInputTextNumber);
-        EditText secondInputTN = findViewById(R.id.secondInputTextNumber);
         TextView enterTV = findViewById(R.id.resultTextView);
-        Spinner operationSpin = findViewById(R.id.operationSelectorSpinner);
         String operation = operationSpin.getSelectedItem().toString();
         System.out.println(operation);
         int firstInput = Integer.parseInt(firstInputTN.getText().toString());
@@ -37,13 +39,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void checkSpinner(View v){
-            EditText firstInputTN = findViewById(R.id.firstInputTextNumber);
-            EditText secondInputTN = findViewById(R.id.secondInputTextNumber);
-            Spinner operationSpin = findViewById(R.id.operationSelectorSpinner);
+
+            operationSpin = findViewById(R.id.operationSelectorSpinner);
             String operation = operationSpin.getSelectedItem().toString();
             if (operation.equals("square root") || operation.equals("cube root")) {
                 firstInputTN.setHint("Single Input");
-                firstInputTN.setText("");
                 secondInputTN.setHint("Leave Blank(NC)");
                 secondInputTN.setText("");
             }
