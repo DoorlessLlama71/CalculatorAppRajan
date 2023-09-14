@@ -49,6 +49,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
+
         android:id="@+id/operationSelectorSpinner"
         android:layout_width="107dp"
         android:layout_height="35dp"
@@ -59,7 +60,9 @@
         android:entries="@array/operations"
         android:foregroundTint="#CD6363"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstInputTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/firstInputTextNumber"/>
+        <!--Android tutorial on spinners in order to understand basics-->
+
 
 
 

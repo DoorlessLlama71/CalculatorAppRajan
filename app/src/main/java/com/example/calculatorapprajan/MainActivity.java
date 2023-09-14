@@ -42,12 +42,16 @@ public class MainActivity extends AppCompatActivity {
         TextView enterTV = findViewById(R.id.resultTextView);
         String operation = operationSpin.getSelectedItem().toString();
         System.out.println(operation);
+        int secondInput =0;
         int firstInput = Integer.parseInt(firstInputTN.getText().toString());
-        int secondInput = Integer.parseInt(secondInputTN.getText().toString());
+
         if (operation.equals("square root") || operation.equals("cube root")) {
             firstInputTN.setHint("Single Input");
             secondInputTN.setHint("Leave Blank(NC)");
             secondInputTN.setText("");
+        }
+        else{
+            secondInput = Integer.parseInt(secondInputTN.getText().toString());
         }
         if (operation.equals("+")) {
             enterTV.setText("" + (0.0 + firstInput + secondInput));
@@ -57,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
             enterTV.setText("" + (1.0 * firstInput * secondInput));
         } else if (operation.equals("MOD")) {
             enterTV.setText("" + (1.0 * firstInput * secondInput));
+        }else if (operation.equals("square root")) {
+            enterTV.setText("" + Math.sqrt(1.0*firstInput));
+        }else if (operation.equals("cube root")) {
+            enterTV.setText("" + Math.cbrt(1.0*firstInput));
         } else {
             enterTV.setText("" + (1.0 * firstInput / secondInput));
         }

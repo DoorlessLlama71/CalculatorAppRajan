@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="operations">
+    <!--Array created to go in spinner object-->
         <item>+</item>
         <item>-</item>
         <item>*</item>

@@ -5,6 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
     <style name="calculatorButtonTheme">
+        <!-- theme for buttons in calculator button program -->
         <item name="android:backgroundTint">@color/lightSkyBlue</item>
         <item name="android:textColor">@color/royalBlue</item>
         <item name="android:layout_width">@dimen/numberButtonSideLength</item>
@@ -13,6 +14,7 @@
     </style>
 
     <style name="inputBoxes">
+        <!-- theme for input boxes scross the program -->
         <item name="android:hint">@string/numberInputHint</item>
         <item name="android:textColorHint">@color/lightSkyBlue</item>
         <item name="android:backgroundTint">@color/pinkFairyTale</item>

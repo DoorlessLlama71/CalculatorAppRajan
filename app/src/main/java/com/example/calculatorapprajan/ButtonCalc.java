@@ -40,6 +40,7 @@ public class ButtonCalc extends AppCompatActivity {
 
          if (inputString.equals("Clear")) {
             num1=0;
+            num2=0;
             outputTV.setText("");
         }
         else if (inputString.equals("+")||inputString.equals("-")||inputString.equals("*")||inputString.equals("/")||inputString.equals("=")) {
@@ -58,10 +59,10 @@ public class ButtonCalc extends AppCompatActivity {
                 num1-=num2;
             }
             else if(tempOperation.equals("*")){
-                num1=num1*num2;
+                num1=(1.0*num1)*num2;
             }
             else if(tempOperation.equals("/")){
-                num1=num1/num2;
+                num1=(1.0*num1)/num2;
             }
             if(inputString.equals("=")){
                 outputTV.setText("" + num1);
