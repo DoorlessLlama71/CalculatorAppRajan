@@ -2,5 +2,5 @@
 <resources>
     <dimen name = "inputBoxTextSize">24sp</dimen>
     <dimen name = "numberButtonTextSize">16dp</dimen>
-    <dimen name = "numberButtonSideLength">80dp</dimen>
+    <dimen name = "numberButtonSideLength">70dp</dimen>
 </resources>
